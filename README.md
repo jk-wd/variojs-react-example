@@ -2,7 +2,7 @@
 
 In the project directory, you can run:
 
-### `variojs`
+### `npx variojs-toolbox start `
 
 Starts the VarioJs user interface.<br />
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
