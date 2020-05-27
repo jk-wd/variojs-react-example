@@ -7,7 +7,7 @@ const initVariojs = async () => {
     url: '/animation-data.json',
   });
   
-  const devTools = await import(/* webpackMode: "lazy", webpackChunkName: "variojs-dev-tools" */ 'variojs-dev-tools');
+  const devTools = await import(/* webpackMode: "lazy", webpackChunkName: "variojs-toolbox" */ 'variojs-toolbox');
   devTools.default.init(variojs);
   variojs.play();
 };
