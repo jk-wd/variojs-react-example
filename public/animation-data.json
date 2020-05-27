@@ -1,0 +1,133 @@
+{
+  "timelines": [
+    {
+      "id": "main",
+      "loop": true,
+      "animationEntries": [
+        "942c6c12-d819-4ab0-a7c4-2aca7df2b6e0"
+      ]
+    }
+  ],
+  "parallaxTimelines": [
+    {
+      "id": "main",
+      "animationEntries": [
+        "a78f4d0b-720f-4903-9b52-46886e97374b",
+        "11f438ba-3ff1-4ebc-85bb-fbc39be1d7d0"
+      ]
+    }
+  ],
+  "animationEntries": [
+    {
+      "id": "942c6c12-d819-4ab0-a7c4-2aca7df2b6e0",
+      "domReference": "cricles",
+      "name": "rotate-circles",
+      "startMs": "0",
+      "animationDefinitions": {
+        "default": [
+          "d83701ff-6486-4c73-9f5e-c2cf5847b816"
+        ]
+      }
+    },
+    {
+      "id": "a78f4d0b-720f-4903-9b52-46886e97374b",
+      "domReference": "cricle-group",
+      "name": "circle-group-scale",
+      "animationDefinitions": {
+        "default": [
+          "eadb1c51-e77a-45d0-82ee-70d31f43c479"
+        ]
+      }
+    },
+    {
+      "id": "11f438ba-3ff1-4ebc-85bb-fbc39be1d7d0",
+      "domReference": "cricle-group",
+      "name": "circle-group-fade-out",
+      "animationDefinitions": {
+        "default": [
+          "8da79f41-cded-4c9f-a35d-f0f6f1d082e0"
+        ]
+      },
+      "startOffsetPixels": "4000"
+    }
+  ],
+  "animationDefinitions": [
+    {
+      "id": "d83701ff-6486-4c73-9f5e-c2cf5847b816",
+      "props": {
+        "rotate": [
+          {
+            "id": "58d6f267-4976-4300-bc66-c51bddd22b9d",
+            "value": 0,
+            "ms": 0
+          },
+          {
+            "id": "44eb5c24-ac0f-4d60-8750-4ce3913bcb61",
+            "value": 360,
+            "ms": 10000
+          }
+        ]
+      },
+      "name": "rotate"
+    },
+    {
+      "id": "eadb1c51-e77a-45d0-82ee-70d31f43c479",
+      "props": {
+        "scaleX": [
+          {
+            "id": "ddd578f0-9674-4d43-83a2-c6756388b8cf",
+            "value": 100,
+            "offsetPixels": 0
+          },
+          {
+            "id": "cd1d1bcd-6e2b-4f71-ae43-03215f72a224",
+            "value": 4,
+            "offsetPixels": 2000
+          },
+          {
+            "id": "d75d720c-a868-4d15-8803-45fb6b8b5c31",
+            "value": 100,
+            "offsetPixels": 4000
+          }
+        ],
+        "scaleY": [
+          {
+            "id": "e684e042-d002-48a4-8f97-b339541f3481",
+            "value": 100,
+            "offsetPixels": 0
+          },
+          {
+            "id": "af15425f-624e-4b8a-832b-b472d0d5957d",
+            "value": 4,
+            "offsetPixels": 2000
+          },
+          {
+            "id": "8bd30c22-06fa-458e-87ae-4311e11856c7",
+            "value": 100,
+            "offsetPixels": 4000
+          }
+        ]
+      },
+      "name": "scale"
+    },
+    {
+      "id": "8da79f41-cded-4c9f-a35d-f0f6f1d082e0",
+      "props": {
+        "opacity": [
+          {
+            "id": "32db0157-a0de-4be6-9745-bdd79c270307",
+            "value": 100,
+            "offsetPixels": 0
+          },
+          {
+            "id": "10f74b07-aa28-46c2-ac0e-0dc5c6446c08",
+            "value": 0,
+            "offsetPixels": 2000
+          }
+        ]
+      },
+      "name": "fade-out"
+    }
+  ],
+  "activeParallaxTimeline": "main"
+}

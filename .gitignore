@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+
+.history
+.DS_Store
+
 # production
 /build
 
