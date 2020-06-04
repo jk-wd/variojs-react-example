@@ -1,18 +1,50 @@
 body {
   height: 10000px;
 }
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
 .scroll {
   position: fixed;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
 }
-.logo {
-  width: 280px;
+
+.bird-wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-origin: center center;
 }
-.logo-holder {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.bird {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-position: center center;
+}
+.bird-bg {
+  background-image: url('/bird-2.png');
+}
+.bird1 {
+  background-image: url('/bird-1.png');
+}
+.bird2 {
+  background-image: url('/bird-2.png');
+}
+.bird3 {
+  background-image: url('/bird-3.png');
+}
+.bird4 {
+  background-image: url('/bird-4.png');
 }

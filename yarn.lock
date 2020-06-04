@@ -11015,10 +11015,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-variojs-toolbox@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/variojs-toolbox/-/variojs-toolbox-0.0.12.tgz#2f585d68a718a8c8964a732434546813dea69021"
-  integrity sha512-yEzmv21CyZrT6S+v5eZ1BkdvGRw4cs/hbUgOd2RPUUrrEIN3whCp64vlxginkOlS5fSKj5r3VOOnF+L3H2+byQ==
+variojs-toolbox@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/variojs-toolbox/-/variojs-toolbox-0.0.13.tgz#1097bd12bc9b1e436b86f0093ae4ce849fbf49e8"
+  integrity sha512-C/T5KQJ2FR8w5KgaTYB/TnyceG8eAKxAaTx/tNzOXrozQefAaofYuSwkczW6dY1hYFX7kLhaaQ1Xm/b6ni7SGg==
   dependencies:
     "@types/react" "^16.9.34"
     "@types/react-dom" "^16.9.7"
@@ -11040,10 +11040,10 @@ variojs@^0.0.1:
   resolved "https://registry.yarnpkg.com/variojs/-/variojs-0.0.1.tgz#1112eaca5eaa06a1b70e557d983a45df0dbb4bd2"
   integrity sha512-IYCe3qDhREOGM4BCX1xYq4dXDwJcfuO321XTvbX5P/S291uSlaNK2+a170SaArXExdMFLZhuhGUFl9S84k2P2A==
 
-variojs@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/variojs/-/variojs-0.0.2.tgz#01085a4181319b720ffcdd898a4ee58d4fbdd282"
-  integrity sha512-HHBfF8tEgB4Sl2/HsI0LMDECh6rLsNK55G7Rnw5grT0s9j8J0UL+F5CbCACu8YPX658GRSsNTCBmFIfFnlNJQw==
+variojs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/variojs/-/variojs-0.0.3.tgz#0d270eb824d2c1038f36ce31b05f78f050ffd452"
+  integrity sha512-lXA9hMf+L3hiY88XASLBoX+MeEIVyXAtQ/rkq2fxsh9v4auGnGC2bDPo+Oq50t+WC/Gb2umFYAPZ4Z6JmkqSdg==
 
 vary@~1.1.2:
   version "1.1.2"
