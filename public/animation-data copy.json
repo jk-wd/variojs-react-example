@@ -2,24 +2,19 @@
   "timelines": [
     {
       "id": "bird",
-      "animationEntries": [
-        "82fee2d6-79d3-4013-bc98-ce47e9aeb2f5",
-        "99145cb3-fef9-417b-b24f-8430d598a6cf",
-        "1aceafe2-b8c3-464d-9684-280f424ce201",
-        "6e321826-aaa6-4404-b766-bafd7b5f5634",
-        "30cdc298-5397-4985-b542-7ae8ada393fb"
-      ],
-      "loop": true,
-      "parallax": false
+      "animationEntries": {
+        "default": [
+          "82fee2d6-79d3-4013-bc98-ce47e9aeb2f5",
+          "99145cb3-fef9-417b-b24f-8430d598a6cf",
+          "1aceafe2-b8c3-464d-9684-280f424ce201",
+          "6e321826-aaa6-4404-b766-bafd7b5f5634",
+          "30cdc298-5397-4985-b542-7ae8ada393fb"
+        ]
+      },
+      "loop": true
     },
     {
-      "id": "main-parallax",
-      "animationEntries":["ca409059-a8ee-4741-8435-687745ba36de"],
-      "parallax": true
-    },
-    {
-      "id": "main",
-      "parallax": false
+      "id": "main"
     }
   ],
   "animationEntries": [
@@ -69,6 +64,15 @@
       "animationConnections": []
     },
     {
+      "id": "60123e18-14db-438f-b58e-f8deacbd15a5",
+      "domReference": "birdWrapper",
+      "name": "move-bird-down",
+      "animationConnection": {
+        "animationDefinitionId": "dda42da5-6df3-42ac-95ab-cff67ca7aeb9"
+      },
+      "animationConnections": []
+    },
+    {
       "id": "ca409059-a8ee-4741-8435-687745ba36de",
       "domReference": "bird-wrapper",
       "name": "move-bird-on-scroll",
@@ -80,6 +84,14 @@
           "animationDefinitionId": "6c025df2-f1f6-4f1f-ae83-ccb88c359585"
         }
       ]
+    },
+    {
+      "id": "cec13e0e-2b89-4070-ab86-f72004d4e16c",
+      "domReference": "bird-wrapper",
+      "name": "move-bird-on-scroll-small",
+      "animationConnection": {
+        "animationDefinitionId": "f7d1a7a7-c28a-425f-a5e6-457aa62d7d0a"
+      }
     }
   ],
   "animationDefinitions": [
@@ -89,35 +101,23 @@
         "opacity": [
           {
             "id": "430b5b16-dc88-449a-b234-d3e74f40a76e",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "0"
+            "value": 100,
+            "ms": 0
           },
           {
             "id": "4ac295f2-96ee-4cb4-ad3f-1774a09d1668",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "200"
+            "value": 0,
+            "ms": 200
           },
           {
             "id": "1a5cdeb0-36cc-4ceb-a68f-eb33778f5cde",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "600"
+            "value": 0,
+            "ms": 600
           },
           {
             "id": "25b2bdb8-97fb-4aca-97a6-1d04b84f82e9",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "800"
+            "value": 100,
+            "ms": 800
           }
         ]
       }
@@ -128,27 +128,18 @@
         "opacity": [
           {
             "id": "6238e1e8-cfe7-4394-a1b9-aa1214e8a3fc",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "0"
+            "value": 0,
+            "ms": 0
           },
           {
             "id": "0aebf289-4891-44ff-a848-df381f900aca",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "200"
+            "value": 100,
+            "ms": 200
           },
           {
             "id": "98b1c99e-e1a6-43d6-b060-e1d98f4c8689",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "400"
+            "value": 0,
+            "ms": 400
           }
         ]
       }
@@ -159,35 +150,23 @@
         "opacity": [
           {
             "id": "22599d92-1c27-4034-be93-0b52bdbb7abe",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "0"
+            "value": 0,
+            "ms": 0
           },
           {
             "id": "0cbc5595-90d3-430f-a66e-9d770cef9df4",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "200"
+            "value": 0,
+            "ms": 200
           },
           {
             "id": "f5cc266c-2c52-47f6-9da7-24a8f46fc2e2",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "400"
+            "value": 100,
+            "ms": 400
           },
           {
             "id": "0681a302-929c-44b8-bde0-00e0417d0839",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "600"
+            "value": 0,
+            "ms": 600
           }
         ]
       }
@@ -198,35 +177,23 @@
         "opacity": [
           {
             "id": "46a7033e-fef5-493d-8110-49e555a8a10c",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "0"
+            "value": 0,
+            "ms": 0
           },
           {
             "id": "cd3dec37-b8e6-42c5-810b-e09919751b37",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "400"
+            "value": 0,
+            "ms": 400
           },
           {
             "id": "0fbfffa7-e58e-4573-952e-e5ccb212ec26",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "msDef": "600"
+            "value": 100,
+            "ms": 600
           },
           {
             "id": "7fb31697-9c38-42bc-b6d8-8bac96d779c9",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "800"
+            "value": 0,
+            "ms": 800
           }
         ]
       }
@@ -237,33 +204,67 @@
         "translateY": [
           {
             "id": "931f55d2-7163-4060-9ca0-13d8860fda00",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "0"
+            "value": 0,
+            "ms": 0
           },
           {
             "id": "480c6235-1903-4e29-b48a-a32d8072349a",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100",
-              "small": "-1000"
-            },
-            "msDef": "300",
+            "value": 2,
+            "ms": 300,
             "easing": "easeInOutQuad"
           },
           {
             "id": "5af3d4cf-9879-425d-8afc-26cf85f364bf",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "msDef": "800",
+            "value": 0,
+            "ms": 800,
             "easing": "easeInOutQuad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dda42da5-6df3-42ac-95ab-cff67ca7aeb9",
+      "props": {
+        "rotate": [
+          {
+            "id": "73cc580c-82b7-4534-b54b-5d4880addc4b",
+            "value": 0,
+            "offsetPixels": 500,
+            "easing": "easeInOutQuad"
+          },
+          {
+            "id": "7df986aa-1f9c-45e3-abd4-962a99488c37",
+            "value": 30,
+            "offsetPixels": 800
+          },
+          {
+            "id": "09af84bc-09d3-461f-bc68-3c0a48061e4e",
+            "value": 0,
+            "offsetPixels": 1980
+          }
+        ],
+        "translateY": [
+          {
+            "id": "a2a62ec1-4a27-426f-89c5-d83f840fad00",
+            "value": 0,
+            "offsetPixels": 800
+          },
+          {
+            "id": "a59fb93b-f5ea-4ef4-a5b5-7418b9a82b4c",
+            "value": -200,
+            "offsetPixels": 2000
+          }
+        ],
+        "translateX": [
+          {
+            "id": "d4b03b7b-5beb-45ec-b8c4-b36c89f42c1b",
+            "value": 0,
+            "offsetPixels": 1000
+          },
+          {
+            "id": "796df156-bb94-4519-88b3-d7e22b5551a4",
+            "value": 3000,
+            "offsetPixels": 5200
           }
         ]
       }
@@ -274,69 +275,45 @@
         "scaleX": [
           {
             "id": "9dd517b1-5486-46e5-8077-a32454b5c909",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "pxDef": "0"
+            "value": 100,
+            "offsetPixels": 0
           },
           {
             "id": "db317883-c08d-4f62-a8f2-9b2f2303e49f",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "300"
-            },
-            "pxDef": "2000"
+            "value": 300,
+            "offsetPixels": 2000
           },
           {
             "id": "4e203aab-0c59-41aa-9fe2-dc0e822b4aab",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "300"
-            },
-            "pxDef": "2500"
+            "value": 300,
+            "offsetPixels": 2500
           },
           {
             "id": "367b9a01-3bf8-419e-abd9-825033340c9e",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "pxDef": "4000"
+            "value": 100,
+            "offsetPixels": 4000
           }
         ],
         "scaleY": [
           {
             "id": "d459338b-f51a-44c2-a32e-c98a5ba3fd7a",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "100"
-            },
-            "pxDef": "0"
+            "value": 100,
+            "offsetPixels": 0
           },
           {
             "id": "bddf7926-33e3-499f-bf6e-42a107fa219e",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "300"
-            },
-            "pxDef": "2000"
+            "value": 300,
+            "offsetPixels": 2000
           },
           {
             "id": "0c855ff3-6232-4cef-8ff6-3d1707f80c3c",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "300"
-            },
-            "pxDef": "2500"
+            "value": 300,
+            "offsetPixels": 2500
           },
           {
             "id": "0ecd280b-f7cf-480b-b56b-d43c7999a646",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "1000"
-            },
-            "pxDef": "4000"
+            "value": 100,
+            "offsetPixels": 4000
           }
         ]
       },
@@ -348,31 +325,50 @@
         "translateX": [
           {
             "id": "a7d8d099-3d8a-4837-ac07-680739c23e77",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "-200"
-            },
-            "pxDef": "0"
+            "value": -200,
+            "offsetPixels": 0
           },
           {
             "id": "faaf8fdd-db2f-4369-a5d8-85203eb289b8",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "0"
-            },
-            "pxDef": "2500"
+            "value": 0,
+            "offsetPixels": 2500
           },
           {
             "id": "29d021be-d3eb-4387-ac8e-b4a065c41ed4",
-            "unit": "px",
-            "frameValueType": "number",
-            "valueDef": {
-              "none": "200"
-            },
-            "pxDef": "4000"
+            "value": 200,
+            "offsetPixels": 4000
           }
+        ]
+      }
+    },
+    {
+      "id": "f7d1a7a7-c28a-425f-a5e6-457aa62d7d0a",
+      "props": {
+        "translateX": [
+          {
+            "id": "1834a36e-1e69-4f7a-b6a9-13944b5a061f",
+            "value": 0,
+            "offsetPixels": 0
+          },
+          {
+            "id": "a6cc0d2e-6d98-4ed2-856d-f1585156a1cc",
+            "value": 0,
+            "offsetPixels": 4000
+          }
+        ]
+      }
+    }
+  ],
+  "activeParallaxTimeline": "main",
+  "parallaxTimelines": [
+    {
+      "id": "main",
+      "animationEntries": {
+        "default": [
+          "ca409059-a8ee-4741-8435-687745ba36de"
+        ],
+        "small": [
+          "cec13e0e-2b89-4070-ab86-f72004d4e16c"
         ]
       }
     }
@@ -380,7 +376,7 @@
   "breakpoints": [
     {
       "id": "small",
-      "definition": "(max-width: 700px)",
+      "definition": "<=700",
       "order": 1
     }
   ]
